@@ -3,142 +3,249 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kittuni — private expense tracker for iPhone</title>
-<meta name="description" content="Track spending from your bank statements and bank alert emails, entirely on your iPhone. No servers, no tracking.">
-<meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+<title>Kittuni — Every rupee, sorted</title>
+<meta name="description" content="Kittuni turns your bank statements and alert emails into a clear picture of where your money goes. No sign-up, and nothing leaves your phone.">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://kittuni.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="home">
+<body>
 <a class="skip" href="#content">Skip to content</a>
 <header class="bar">
   <div class="bar-inner">
     <a class="wordmark" href="index.html">Kittuni</a>
-    <a class="bar-link" href="privacy/">Privacy</a>
+    <a class="bar-link" href="privacy/">Privacy policy</a>
   </div>
 </header>
 <main id="content">
   <section class="hero">
-    <div class="hero-copy">
-      <p class="kicker">Private expense tracker for iPhone</p>
-      <h1>Know where your money went.</h1>
-      <p class="lede">Your finance data never leaves your iPhone.</p>
+    <div>
+      <p class="eyebrow">Kittuni</p>
+      <h1>Every rupee, sorted. Right on your iPhone.</h1>
+      <p class="sub">Kittuni turns your bank statements and alert emails into a clear picture of where your money goes: categorised, budgeted and searchable. No sign-up, and nothing leaves your phone.</p>
       <p class="maker">Kittuni is made by Sarath Krishna Prasad, an independent developer in Hyderabad, India.</p>
-      <p class="store" role="note" aria-label="App Store — coming soon">
-        <span class="store-top" aria-hidden="true">App Store</span>
-        <span class="store-bottom" aria-hidden="true">Coming soon</span>
-      </p>
+      <p class="hero-links"><a href="privacy/">Privacy policy</a> · <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a></p>
     </div>
-    <figure class="hero-device">
-      <div class="phone" aria-hidden="true">
-        <span class="btn-vol"></span>
-        <span class="btn-power"></span>
-        <div class="screen">
-          <div class="island"></div>
-          <div class="status"><span>9:41</span><span class="status-gap"></span><span></span></div>
-          <div class="appbar">
-            <p class="appbar-title">October</p>
-            <p class="appbar-sub">Illustrative sample</p>
-          </div>
-          <div class="summary">
-            <p class="sum-k">Spent</p>
-            <p class="sum-v">₹18,420</p>
-            <p class="sum-row"><span>Food</span><i class="meter m1"></i></p>
-            <p class="sum-row"><span>Bills</span><i class="meter m2"></i></p>
-          </div>
-          <div class="txns">
-            <div class="txn">
-              <span class="dot dot-food"></span>
-              <span class="txn-copy">
-                <span class="txn-name">Swiggy ₹349</span>
-                <span class="txn-meta">Today · Food</span>
-              </span>
-            </div>
-            <div class="txn">
-              <span class="dot dot-card"></span>
-              <span class="txn-copy">
-                <span class="txn-name">HDFC Credit Card</span>
-                <span class="txn-meta">Yesterday · Card</span>
-              </span>
-            </div>
-            <div class="txn">
-              <span class="dot dot-in"></span>
-              <span class="txn-copy">
-                <span class="txn-name">Salary credited</span>
-                <span class="txn-meta">1 Oct · Income</span>
-              </span>
-            </div>
-          </div>
-          <div class="tabs">
-            <span class="tab on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 7h14M5 12h14M5 17h10"/></svg>Activity</span>
-            <span class="tab"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 16.5h2.2V20H4v-3.5zm4.6-4.2h2.2V20H8.6v-7.7zM13.2 9h2.2v11h-2.2V9zM17.8 4H20v16h-2.2V4z"/></svg>Summary</span>
-          </div>
-          <div class="home-ind"></div>
-        </div>
-      </div>
-      <figcaption>Illustrative sample. Not real transactions.</figcaption>
+    <div class="hero-visual">
+      <figure class="device">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/screens/07-home-dark.webp 660w, assets/screens/07-home-dark-2x.webp 1320w" sizes="(max-width: 860px) 70vw, 340px">
+          <img src="assets/screens/01-home-light.webp" srcset="assets/screens/01-home-light.webp 660w, assets/screens/01-home-light-2x.webp 1320w" sizes="(max-width: 860px) 70vw, 340px" width="660" height="1434" alt="Kittuni home screen on iPhone, with a sample October spending summary, category chart, and recent transactions. The screen matches light or dark mode." fetchpriority="high" decoding="async">
+        </picture>
+      </figure>
+      <p class="caption">Sample data on a simulated iPhone.</p>
+    </div>
+  </section>
+
+  <section class="works">
+    <h2>Works with</h2>
+    <p>PDF, CSV and Excel statements from major Indian banks and card issuers, including password-protected PDFs; bank alerts from one or more Gmail accounts.</p>
+  </section>
+
+  <section class="feature">
+    <div class="copy">
+      <h2>Import statements in seconds.</h2>
+      <p>Drop in a statement and Kittuni finds every transaction, so you can skip typing them in one by one.</p>
+      <p><strong>Unlock password-protected PDFs.</strong> Enter the password once and Kittuni can remember it securely on this iPhone, so next month's statement opens without asking.</p>
+    </div>
+    <figure class="device">
+      <img src="assets/screens/04-statement-import-light.webp" srcset="assets/screens/04-statement-import-light.webp 660w, assets/screens/04-statement-import-light-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Statement import on iPhone, previewing a sample October card statement and the transactions found in it." loading="lazy" decoding="async">
     </figure>
   </section>
 
-  <section class="band">
-    <h2>How it works</h2>
-    <ul class="group">
-      <li>
-        <span class="glyph glyph-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg></span>
-        <p><strong>Import statements.</strong> Choose one or more bank or credit card statements (PDF, CSV or Excel) from HDFC, SBI, ICICI, Axis, Kotak, American Express and more. Password-protected PDFs work.</p>
-      </li>
-      <li>
-        <span class="glyph glyph-green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7.5 12 13l8-5.5"/></svg></span>
-        <p><strong>Optional: bank alert emails.</strong> Connect one or more Gmail (or Outlook) accounts with read-only access. Kittuni looks only at emails from your banks' alert addresses and turns them into transactions between statements.</p>
-      </li>
-      <li>
-        <span class="glyph glyph-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 16.5h2.2V20H4v-3.5zm4.6-4.2h2.2V20H8.6v-7.7zM13.2 9h2.2v11h-2.2V9zM17.8 4H20v16h-2.2V4z"/></svg></span>
-        <p><strong>See the picture.</strong> Monthly and financial-year spending, categories, card bill reminders, CSV export.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="band">
-    <h2>Private by design</h2>
-    <ul class="group">
-      <li>
-        <span class="glyph glyph-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="12" height="9.5" rx="2"/><path d="M8.5 10V8a3.5 3.5 0 0 1 7 0v2"/></svg></span>
-        <p>Everything is read and stored on your iPhone. There is no Kittuni server and no Kittuni account.</p>
-      </li>
-      <li>
-        <span class="glyph glyph-green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7.5 12 13l8-5.5"/></svg></span>
-        <p>Email access goes directly from your phone to Google or Microsoft. The developer never sees your email or your transactions.</p>
-      </li>
-      <li>
-        <span class="glyph glyph-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2 13.35 7.1 18.3 8.45 13.35 9.8 12 14.7 10.65 9.8 5.7 8.45 10.65 7.1 12 2.2zM17.6 13.2l.7 2.45 2.5.7-2.5.7-.7 2.45-.7-2.45-2.5-.7 2.5-.7.7-2.45zM6.3 13.6l.55 1.85 1.9.55-1.9.55-.55 1.85-.55-1.85-1.9-.55 1.9-.55.55-1.85z"/></svg></span>
-        <p>On supported iPhones, optional AI uses only Apple's on-device model: nothing is sent anywhere, Apple's Private Cloud Compute is not used, and AI never changes a category you set.</p>
-      </li>
-      <li>
-        <span class="glyph glyph-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="12" height="9.5" rx="2"/><path d="M8.5 10V8a3.5 3.5 0 0 1 7 0v2"/></svg></span>
-        <p>No ads, analytics or tracking. Read-only email access: Kittuni can't send, delete or change mail.</p>
-      </li>
-      <li>
-        <span class="glyph glyph-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg></span>
-        <p>Disconnect email or delete all data any time from inside the app.</p>
-      </li>
-    </ul>
-    <div class="note">
-      <p>Kittuni's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <section class="feature flip">
+    <div class="copy">
+      <h2>Bank alerts from your inbox.</h2>
+      <p>Connect one or more Gmail accounts and spending shows up as it happens. Kittuni won't count a transaction twice when the statement arrives later.</p>
     </div>
+    <figure class="device">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/screens/09-accounts-gmail-dark.webp 660w, assets/screens/09-accounts-gmail-dark-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px">
+        <img src="assets/screens/05-accounts-gmail-light.webp" srcset="assets/screens/05-accounts-gmail-light.webp 660w, assets/screens/05-accounts-gmail-light-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Accounts screen on iPhone, light or dark, with a sample Gmail account connected for bank-alert email." loading="lazy" decoding="async">
+      </picture>
+    </figure>
   </section>
 
-  <section class="band">
-    <h2>What Kittuni isn't</h2>
-    <div class="card prose">
-      <p>Kittuni is personal bookkeeping. It doesn't move money, log in to your bank, give financial advice, offer loans or check credit scores.</p>
+  <section class="feature">
+    <div class="copy">
+      <h2>Automatic categories.</h2>
+      <p>Rent, groceries, travel, EMIs and more are sorted for you. Create your own categories too, like Pets or Kids.</p>
+    </div>
+    <figure class="device">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/screens/08-transactions-dark.webp 660w, assets/screens/08-transactions-dark-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px">
+        <img src="assets/screens/02-transactions-light.webp" srcset="assets/screens/02-transactions-light.webp 660w, assets/screens/02-transactions-light-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Transactions screen on iPhone, light or dark, listing sample October spending grouped into categories." loading="lazy" decoding="async">
+      </picture>
+    </figure>
+  </section>
+
+  <section class="feature flip">
+    <div class="copy">
+      <h2>Budgets that keep you honest.</h2>
+      <p>Set an overall monthly budget or one per category, and see at a glance how much you have left.</p>
+    </div>
+    <figure class="device">
+      <img src="assets/screens/03-budgets-light.webp" srcset="assets/screens/03-budgets-light.webp 660w, assets/screens/03-budgets-light-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Budgets screen on iPhone, with sample monthly and category budgets and how much is left." loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <section class="feature">
+    <div class="copy">
+      <h2>See your month at a glance.</h2>
+      <p>A single chart shows where the money went, with month and year views and easy comparisons.</p>
+    </div>
+    <figure class="device">
+      <img src="assets/screens/report.webp" srcset="assets/screens/report.webp 660w, assets/screens/report-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Spending report on iPhone for a sample month, with charts and a short written summary." loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <section class="feature flip">
+    <div class="copy">
+      <h2>Recurring payments in one place.</h2>
+      <p>Subscriptions, SIPs, EMIs and yearly renewals are listed together, so nothing surprises you.</p>
+    </div>
+    <figure class="device">
+      <img src="assets/screens/bills.webp" srcset="assets/screens/bills.webp 660w, assets/screens/bills-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Recurring bills on iPhone, with sample subscriptions, rent, and card payments, including some that are paused." loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <section class="feature">
+    <div class="copy">
+      <h2>Tags, splits and search.</h2>
+      <p>Split a mixed bill across categories, tag a trip or a festival, and find any transaction instantly.</p>
+    </div>
+    <figure class="device">
+      <img src="assets/screens/split.webp" srcset="assets/screens/split.webp 660w, assets/screens/split-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Splitting a sample restaurant bill across two categories on iPhone." loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <section class="feature flip">
+    <div class="copy">
+      <h2>Savings goals.</h2>
+      <p>Set a target and follow the progress, for an emergency fund, a trip, or anything else you are putting money aside for.</p>
+    </div>
+    <figure class="device">
+      <img src="assets/screens/goals.webp" srcset="assets/screens/goals.webp 660w, assets/screens/goals-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Savings goals on iPhone, with sample progress toward an emergency fund, a trip, and a laptop." loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <section class="feature">
+    <div class="copy">
+      <h2>A look ahead.</h2>
+      <p>See where your balance is heading, along with upcoming bills and what is left to spend each day.</p>
+    </div>
+    <figure class="device">
+      <img src="assets/screens/forecast.webp" srcset="assets/screens/forecast.webp 660w, assets/screens/forecast-2x.webp 1320w" sizes="(max-width: 860px) 72vw, 300px" width="660" height="1434" alt="Balance forecast on iPhone for a sample month, with a chart, upcoming bills, and a daily amount left to spend." loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <section class="band" id="on-device">
+    <h2>On-device AI</h2>
+    <p class="section-lead">On supported iPhones with Apple Intelligence, Kittuni uses Apple's on-device model. Nothing is sent anywhere.</p>
+    <div class="ai-phones">
+      <figure class="device">
+        <img src="assets/screens/06-ask-light.webp" srcset="assets/screens/06-ask-light.webp 660w, assets/screens/06-ask-light-2x.webp 1320w" sizes="(max-width: 860px) 70vw, 260px" width="660" height="1434" alt="Ask your money on iPhone: a sample question about food spending, answered on the device from sample transactions." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/ask-chart.webp" srcset="assets/screens/ask-chart.webp 660w, assets/screens/ask-chart-2x.webp 1320w" sizes="(max-width: 860px) 70vw, 260px" width="660" height="1434" alt="A sample on-device answer shown as a spending chart covering the last six months." loading="lazy" decoding="async">
+      </figure>
+    </div>
+    <ul class="ai-list">
+      <li><strong>Ask your money.</strong> Ask in plain English, like "How much did I spend on food this month?", and get an answer worked out from your own transactions.</li>
+      <li><strong>Your month, summarised.</strong> A short, readable recap of what you spent and received, and how it compares with last month.</li>
+      <li><strong>Smarter categories.</strong> For transactions Kittuni can't place on its own, it suggests a category and a cleaner merchant name. Accept a suggestion with a tap, or let Kittuni apply them automatically.</li>
+    </ul>
+    <p class="ai-note">Everything else in Kittuni works without Apple Intelligence.</p>
+  </section>
+
+  <section class="backups">
+    <h2>Encrypted backups.</h2>
+    <p>Save a password-protected backup to Files and restore it on a new iPhone whenever you need to.</p>
+  </section>
+
+  <section class="band" id="private">
+    <h2>Private by design</h2>
+    <ul class="points">
+      <li>
+        <h3>Your data stays on your iPhone.</h3>
+        <p>Transactions, budgets and categories are stored on your device.</p>
+      </li>
+      <li>
+        <h3>No account.</h3>
+        <p>There's nothing to sign up for. Just open the app and start.</p>
+      </li>
+      <li>
+        <h3>No servers.</h3>
+        <p>Kittuni has no backend. When you connect Gmail, your iPhone talks to Google directly, and only to read your bank alert emails.</p>
+      </li>
+      <li>
+        <h3>No tracking.</h3>
+        <p>No ads, no analytics and no third-party trackers. Data Not Collected.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="gallery" aria-labelledby="screens-title">
+    <div class="wrap">
+      <h2 id="screens-title">Sample screens</h2>
+      <p class="section-lead">Every screen uses sample data.</p>
+    </div>
+    <div class="rail" tabindex="0" aria-label="Sample screens of Kittuni. Scroll sideways.">
+      <figure class="device">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/screens/07-home-dark.webp 660w, assets/screens/07-home-dark-2x.webp 1320w" sizes="196px">
+          <img src="assets/screens/01-home-light.webp" srcset="assets/screens/01-home-light.webp 660w, assets/screens/01-home-light-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="Kittuni home screen with a sample spending summary." loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="device">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/screens/08-transactions-dark.webp 660w, assets/screens/08-transactions-dark-2x.webp 1320w" sizes="196px">
+          <img src="assets/screens/02-transactions-light.webp" srcset="assets/screens/02-transactions-light.webp 660w, assets/screens/02-transactions-light-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="Sample transactions grouped by category." loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/03-budgets-light.webp" srcset="assets/screens/03-budgets-light.webp 660w, assets/screens/03-budgets-light-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="Sample monthly and category budgets." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/04-statement-import-light.webp" srcset="assets/screens/04-statement-import-light.webp 660w, assets/screens/04-statement-import-light-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="Preview of a sample statement before import." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/screens/09-accounts-gmail-dark.webp 660w, assets/screens/09-accounts-gmail-dark-2x.webp 1320w" sizes="196px">
+          <img src="assets/screens/05-accounts-gmail-light.webp" srcset="assets/screens/05-accounts-gmail-light.webp 660w, assets/screens/05-accounts-gmail-light-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="A sample Gmail account connected for bank alerts." loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/bills.webp" srcset="assets/screens/bills.webp 660w, assets/screens/bills-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="Sample recurring bills and subscriptions." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/split.webp" srcset="assets/screens/split.webp 660w, assets/screens/split-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="A sample bill split across two categories." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/goals.webp" srcset="assets/screens/goals.webp 660w, assets/screens/goals-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="Sample savings goals and their progress." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/forecast.webp" srcset="assets/screens/forecast.webp 660w, assets/screens/forecast-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="A sample balance forecast with upcoming bills." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/report.webp" srcset="assets/screens/report.webp 660w, assets/screens/report-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="A sample monthly spending report." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/06-ask-light.webp" srcset="assets/screens/06-ask-light.webp 660w, assets/screens/06-ask-light-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="A sample question answered on device." loading="lazy" decoding="async">
+      </figure>
+      <figure class="device">
+        <img src="assets/screens/ask-chart.webp" srcset="assets/screens/ask-chart.webp 660w, assets/screens/ask-chart-2x.webp 1320w" sizes="196px" width="660" height="1434" alt="A sample on-device answer shown as a chart." loading="lazy" decoding="async">
+      </figure>
     </div>
   </section>
 </main>
 <footer class="foot">
   <div class="foot-inner">
-    <a href="privacy/">Privacy policy</a> · Sarath Krishna Prasad · <a href="mailto:kittuni.app@gmail.com">Contact</a>
+    <a href="privacy/">Privacy policy</a>
+    <span>Kittuni is made by Sarath Krishna Prasad, an independent developer in Hyderabad, India.</span>
+    <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a>
   </div>
 </footer>
 </body>
