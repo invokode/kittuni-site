@@ -230,7 +230,8 @@ h3 {
   width: 100%;
   height: auto;
   border-radius: 2.05rem;
-  background: #000;
+  /* Match the page until the screenshot arrives. A black fill read as an empty phone. */
+  background: var(--bg);
 }
 
 .caption {
