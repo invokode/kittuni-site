@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kittuni — Privacy Policy</title>
-<meta name="description" content="Privacy policy for Kittuni, a private on-device iPhone expense tracker. Your financial information stays on your iPhone.">
+<meta name="description" content="Kittuni has no account, no ads, no analytics and no tracking. Your money data is stored and processed on your iPhone.">
 <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://kittuni.com/privacy">
@@ -22,76 +22,103 @@
 <main id="content" class="doc">
 <header class="doc-head">
 <h1>Kittuni Privacy Policy</h1>
-<p class="effective"><em>Effective 26 October 2026.</em></p>
+<p class="effective"><em>Effective 28 October 2026</em></p>
 </header>
 <div class="card prose">
-<p>Kittuni is an expense tracker for iPhone. Kittuni is made by Sarath Krishna Prasad, an independent developer in Hyderabad, India. Kittuni is built so that <strong>your financial information stays on your iPhone</strong>. There are no servers for Kittuni, there are no user accounts, and the developer never receives your data.</p>
+<p>Kittuni is an expense tracker for iPhone made by Sarath Krishna Prasad, an independent developer in Hyderabad, India ("I", "me"). This policy explains what Kittuni does with your information. In short: Kittuni has no account, no ads, no analytics and no tracking. Your money data is stored and processed on your iPhone. It reaches me only if you choose to send it: when you help Kittuni support your bank, when you ask for Gmail access, or when you email me.</p>
 </div>
 <section class="block">
-<h2>What Kittuni reads and why</h2>
+<h2>1. What stays on your iPhone</h2>
 <div class="card">
+<p class="card-lead">Kittuni stores your transactions, accounts, budgets, categories, tags, goals, notes, receipt photos and settings in the app's storage on your iPhone. I can't see any of it.</p>
 <ul>
-<li><strong>Bank and card statements you import.</strong> When you choose statement files (PDF, CSV or Excel), Kittuni reads them on your iPhone to create a list of your transactions. If a statement is password-protected you can type the password; you can choose to remember it in your iPhone's Keychain.</li>
-<li><strong>Bank alert emails (optional).</strong> If you connect a Gmail or Outlook account, Kittuni uses read-only access to find emails sent by your banks' transaction-alert addresses (for example HDFC Bank, ICICI Bank, Axis Bank, Kotak, Yes Bank, SBI Card) and turns them into transactions. Kittuni asks your email provider only for messages from those bank addresses; it does not download other emails. It reads an email's sender before deciding whether to download the message.</li>
-<li><strong>What you type</strong>, such as manual expenses, account names, balances and categories.</li>
+<li>Statements you import (PDF, CSV, Excel) are read on your iPhone. If you ask Kittuni to remember a statement password, it is kept in the iOS Keychain on this device only and isn't synced or backed up.</li>
+<li>Receipt scanning uses your camera, or a photo you pick, and reads the receipt with Apple's on-device text recognition. The photo is kept with that transaction in Kittuni's storage.</li>
+<li>UPI and payment screenshots, PDFs or text you share to Kittuni from other apps (the Kittuni share extension) are read on your iPhone with on-device text recognition and handed to the app. Nothing is uploaded.</li>
+<li>On supported iPhones with Apple Intelligence, Kittuni uses Apple's on-device language model to read statement layouts, suggest categories and merchant names, answer questions about your spending and summarise your month. These requests run on your iPhone; Kittuni doesn't use Apple's Private Cloud Compute or any other server model.</li>
+<li>Siri and Shortcuts: if you log an expense with Siri or a Shortcut, Apple handles the speech and passes Kittuni the details (such as amount and category). Apple's processing of Siri requests is covered by Apple's privacy policy.</li>
+<li>Face ID / passcode lock: if you turn on App Lock, iOS checks your face or passcode and tells Kittuni only whether it succeeded. Kittuni never receives biometric data.</li>
+<li>Reminders and alerts (bills, card due dates, budgets, price changes, monthly import) are local notifications scheduled on your iPhone. No push server is involved.</li>
+<li>Backups: Kittuni can export a password-protected, encrypted backup file to a place you choose (for example Files or iCloud Drive). Where that file goes is up to you; if you save it to iCloud Drive, Apple stores it under its own terms. I never receive it, and I can't recover your backup password. Kittuni's data may also be included in your iPhone's own iCloud or computer backups, under Apple's terms.</li>
 </ul>
 </div>
 </section>
 <section class="block">
-<h2>Where your data is kept</h2>
-<div class="card prose">
-<p>Everything — transactions, accounts, categorisation rules, remembered statement passwords and your email sign-in tokens — is stored only on your iPhone, in the app's storage and the iOS Keychain. Keychain items are set to stay on this device and are not synced to iCloud. If you delete Kittuni, or use Settings › Delete everything, this data is removed.</p>
-</div>
-</section>
-<section class="block">
-<h2>What leaves your iPhone</h2>
+<h2>2. Help Kittuni support your bank (optional)</h2>
 <div class="card">
+<p class="card-lead">If Kittuni can't read your bank's statements, you can choose "Help Kittuni support your bank".</p>
 <ul>
-<li><strong>Nothing is sent to the developer or to any third party.</strong> Kittuni contains no analytics, advertising, tracking or crash-reporting code.</li>
-<li>When you connect an email account, your iPhone talks directly to <strong>Google</strong> (accounts.google.com, oauth2.googleapis.com, gmail.googleapis.com) or <strong>Microsoft</strong> (login.microsoftonline.com, graph.microsoft.com) to sign you in and read bank alert emails. These requests go from your phone to your email provider only. Google's and Microsoft's own privacy policies apply to your accounts with them.</li>
-<li><strong>AI features (optional).</strong> AI runs on your iPhone via Apple's on-device model; nothing is sent anywhere. Kittuni uses only Apple's on-device model (Apple Intelligence, on supported iPhones) to suggest categories, answer questions about your spending and write a monthly summary. Kittuni does not use Apple's Private Cloud Compute or any other AI service, and AI never changes a category you set yourself.</li>
-<li>In-app purchases are handled by Apple.</li>
+<li>What is sent: an anonymised text copy of the statement layout, which you preview first. Kittuni replaces names, descriptions and IDs with placeholders, shifts dates and changes amounts, and won't let you send if something still looks like a real ID or account detail. The original PDF is never sent, and statements fetched from Gmail can't be shared at all.</li>
+<li>How: Kittuni opens an email in your iPhone's Mail app addressed to <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a>, with the subject "Statement layout: &lt;bank&gt;". You decide whether to send it. Your email address, your name as it appears in your mail app, and anything you add to the email also reach me. Please don't add attachments or personal details.</li>
+<li>Who: only me. The mailbox is hosted by Google (Gmail), which stores it on my behalf under Google's terms.</li>
+<li>Why: only to write code so Kittuni can read that bank's statements. It isn't used for marketing, sold, shared with anyone else or used to identify you.</li>
+<li>How long: I delete the email and the text once the parser is built, or sooner if you ask. I may keep a basic log (your email address and dates) for up to one year where the law requires it.</li>
+<li>Consent: you must be 18 or older and tick the agreement box each time. Kittuni works the same whether or not you share, Pro included. You can withdraw consent or ask me to delete what you sent at any time by emailing <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a> from the same address.</li>
 </ul>
 </div>
 </section>
 <section class="block">
-<h2>Google user data</h2>
+<h2>3. Gmail bank alerts (invite only)</h2>
 <div class="card">
-<p class="card-lead">Kittuni's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Specifically:</p>
+<p class="card-lead">Reading bank alert and statement emails from Gmail is free, but available by invitation only.</p>
 <ul>
-<li>Kittuni uses Gmail data only to show you your own transactions inside the app, on your device.</li>
-<li>Gmail data is not transferred to anyone, not used for advertising, not sold, and not used to train AI or machine-learning models. The optional AI features process transactions only on your iPhone, with Apple's on-device model, to show you your own results.</li>
-<li>No person, including the developer, can read your Gmail data; it never reaches the developer's systems.</li>
-<li>Kittuni requests the read-only scope (<code>gmail.readonly</code>); it cannot send, delete or change email.</li>
+<li>Asking for access: email <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a> from the Google account you want to use. I keep your email address and name so I can add that address as a test user in Kittuni's Google Cloud project, which is the only way Google lets an invited account sign in. Google stores that list. I use your address only to give you access and reply to you, never for marketing. I remove it when you ask, when you stop using the feature, or when the invitation programme ends, and I delete the request emails within 90 days of that.</li>
+<li>What you'll see: Google shows a "Google hasn't verified this app" screen before you sign in, because Kittuni's Google project is in Testing. Google also ends a test user's sign-in after seven days, so Kittuni will ask you to reconnect Gmail about once a week.</li>
+<li>What Kittuni reads: with your permission (read-only Gmail access, gmail.readonly), your iPhone connects directly to Google and searches only for emails from known bank and card senders. It reads those messages, and statement PDFs attached to them if you turn on Statement Autopilot, on your iPhone. Transactions it finds are saved on your iPhone; a statement PDF isn't kept after import. Nothing from your Gmail is sent to me or anyone else. Your Google sign-in tokens are kept in the iOS Keychain on this device only.</li>
+<li>Google user data: Kittuni's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to show you your transactions; it isn't transferred to anyone, isn't used for advertising, and isn't read by humans.</li>
+<li>Stop any time: disconnect the account in Kittuni (Accounts), and/or revoke access at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
 </ul>
 </div>
 </section>
 <section class="block">
-<h2>Your choices</h2>
+<h2>4. Purchases</h2>
+<div class="card prose">
+<p>Kittuni Pro (₹49/month or ₹499/year, with a 3-day free trial for new subscribers) is sold by Apple through the App Store. Apple handles payment; Kittuni only learns whether you have an active subscription. Manage or cancel in Settings › [your name] › Subscriptions.</p>
+</div>
+</section>
+<section class="block">
+<h2>5. What Kittuni doesn't do</h2>
+<div class="card prose">
+<p>No account or sign-up. No ads. No analytics, crash-reporting or tracking SDKs. No selling or sharing of personal data for advertising. No tracking across other companies' apps or websites.</p>
+</div>
+</section>
+<section class="block">
+<h2>6. Your rights (India — Digital Personal Data Protection Act, 2023)</h2>
 <div class="card">
+<p class="card-lead">For personal data I hold (only the emails described in sections 2 and 3, and anything you email me), you can:</p>
 <ul>
-<li>You don't have to connect email; statements and manual entry work without it.</li>
-<li>Disconnect an email account any time in Kittuni › Accounts (swipe left). Kittuni revokes its Google access and deletes the stored tokens; transactions already saved stay until you delete them. You can also remove Kittuni's access from your Google Account (Security › Third-party access) or Microsoft account (Privacy › Apps and services).</li>
-<li>Settings › Delete everything erases all Kittuni data on the phone and disconnects email accounts.</li>
+<li>ask for a summary of what I hold and how I've used it;</li>
+<li>ask me to correct or delete it;</li>
+<li>withdraw consent at any time (this doesn't affect what was done before);</li>
+<li>nominate someone to exercise these rights if you die or become unable to;</li>
+<li>raise a grievance with me.</li>
 </ul>
+<p class="card-lead">Email <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a> from the address you used, saying what you'd like. I'll reply within 30 days, and in any case within 90 days. If you're not satisfied with my answer, you can complain to the Data Protection Board of India. Data that never left your iPhone can be removed by you directly: Settings › Delete everything in Kittuni, or delete the app.</p>
+<p class="card-lead">Grievance contact: Sarath Krishna Prasad, <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a>, Hyderabad, Telangana, India.</p>
 </div>
 </section>
 <section class="block">
-<h2>Children</h2>
+<h2>7. Children</h2>
 <div class="card prose">
-<p>Kittuni is not directed at children under 13 (or the minimum age in your country).</p>
+<p>Kittuni isn't directed at children. Sending data to me (sharing a statement layout or asking for Gmail access) is only for people 18 or older. If I learn I've received personal data from someone under 18, I'll delete it.</p>
 </div>
 </section>
 <section class="block">
-<h2>Changes</h2>
+<h2>8. Security</h2>
 <div class="card prose">
-<p>If this policy changes, this page and the date above will be updated. Because the developer holds no data about you, you can't be notified individually.</p>
+<p>On your iPhone, Kittuni relies on iOS data protection, the Keychain and optional App Lock. Backups are encrypted with your password. Emails sent to me are kept in a Google-hosted mailbox accessed only by me.</p>
 </div>
 </section>
 <section class="block">
-<h2>Contact</h2>
+<h2>9. Changes</h2>
 <div class="card prose">
-<p>Sarath Krishna Prasad, an independent developer<br>Hyderabad, India<br><a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a></p>
+<p>If this policy changes, I'll update this page and the effective date, and mention material changes in the app's release notes. I won't start using data you already sent for a new purpose without asking.</p>
+</div>
+</section>
+<section class="block">
+<h2>10. Contact</h2>
+<div class="card prose">
+<p>Sarath Krishna Prasad, Hyderabad, Telangana, India — <a href="mailto:kittuni.app@gmail.com">kittuni.app@gmail.com</a></p>
 </div>
 </section>
 </main>
