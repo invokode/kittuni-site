@@ -346,6 +346,20 @@ h3 {
 
 .backups p { margin: 0.85rem 0 0; color: var(--secondary); }
 
+.gmail-note {
+  width: min(40rem, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 0.25rem 0 2.75rem;
+}
+
+.gmail-note h2 { font-size: clamp(1.35rem, 2.4vw, 1.7rem); }
+
+.gmail-note p {
+  margin: 0.75rem 0 0;
+  color: var(--secondary);
+  font-size: 0.98rem;
+}
+
 .gallery { padding: 1rem 0 2.5rem; }
 
 .gallery .wrap h2 { width: min(1080px, calc(100% - 3rem)); margin-inline: auto; }
@@ -451,7 +465,7 @@ code {
   .hero { padding-top: 2.5rem; }
   .points { grid-template-columns: 1fr; }
   .bar-inner, .wrap { width: min(1080px, calc(100% - 2.25rem)); }
-  .hero, .feature, .works, .band, .backups { width: min(1080px, calc(100% - 2.25rem)); }
+  .hero, .feature, .works, .band, .backups, .gmail-note { width: min(1080px, calc(100% - 2.25rem)); }
   h1 { font-size: clamp(2.5rem, 11vw, 3.4rem); }
 }
 
@@ -475,7 +489,7 @@ code {
 
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    .feature, .works, .band, .backups {
+    .feature, .works, .band, .backups, .gmail-note {
       animation: rise 0.85s var(--ease) both;
       animation-timeline: view();
       animation-range: entry 8% cover 26%;
