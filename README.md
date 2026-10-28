@@ -7,6 +7,8 @@ Public website for [Kittuni](https://kittuni.com), a private on-device iPhone ex
 - `/` — homepage (`index.html`)
 - `/privacy` — privacy policy (`privacy/index.html`)
 - `/privacy.html` — the same privacy policy
+- `/support` — support page (`support/index.html`)
+- `/support.html` — the same support page
 
 Plain static HTML and CSS. Product images in `assets/screens/` are sample screens, stored as local WebP. No JavaScript, analytics, external fonts, or build step.
 
